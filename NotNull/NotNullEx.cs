@@ -1,6 +1,6 @@
 using System;
 
-namespace NotNull
+namespace Blowin.NotNull
 {
   public static class NotNullEx
   {
