@@ -2,7 +2,7 @@
 using Blowin.NotNull;
 using NUnit.Framework;
 
-namespace NotNullTest
+namespace NotNull.Test
 {
   [TestFixture]
   public class Tests
@@ -84,7 +84,7 @@ namespace NotNullTest
 
       var notNull1 = data.ToNotNull();
       var notNull2 = new NotNull<string>(data);
-      var notNull3 = NotNull.From(data);
+      var notNull3 = Blowin.NotNull.NotNull.From(data);
       var notNull4 = (NotNull<string>)data;
       
       Assert.AreEqual(notNull1, notNull2);
